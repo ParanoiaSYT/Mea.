@@ -1,9 +1,8 @@
-
+import lab
 
 
 res = lab.query('NA.JPA_Spec_vs_ppower_pfreq_SYT')
-cou=res.count()
-print(res[cou-1].id)
+print(res[-1].id)
 
 res=lab.query(id__in=['5f34adc2bfde9e2c6080b4c9'])
 rd = res[0].data
@@ -50,6 +49,6 @@ for num in range(210,221):
     print(pump_freq[num]/1e9)
     plt.figure()
     plt.plot(signal_freq, z8)
-# plt.set_xlabel('Frequency / GHz')
+# plt.set_xlabel('Signal_Frequency / GHz')
 # plt.set_ylabel('S21 / dB')
 # plt.set_title('NA.JPA_S21')

@@ -19,8 +19,9 @@ lab.listOneApp('NA.JPA_Spec_vs_ppower_pfreq_SYT')
 
 # 查询数据库
 res=lab.query("NA.JPA_Spev_vs_ppower_pfreq_SYT")
-cou=res.count()
-print(res[cou-1].id)
+# cou=res.count()
+# print(res[cou-1].id)
+print(res[-1].id)
 # 打印出最近的数据
 
 # 取出数据库数据
