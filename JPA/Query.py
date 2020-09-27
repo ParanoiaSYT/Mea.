@@ -31,4 +31,4 @@ x,y=res[0].data
 # 绘图
 import matplotlib.pyplot as plt
 plt.plot(x,y)
-plt.show()
+plt.show() 

@@ -50,8 +50,7 @@ def tearDown(app=app):
     app.rc['flux_sour'].setValue('Output', 'OFF', ch=1)
 
     res = lab.query('NA.JPA_S21_vs_ppower')
-    cou = res.count()
-    print(res[cou - 1].id)
+    print(res[-1].id)
 
 
 # 这个是画上面图的
