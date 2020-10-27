@@ -5,14 +5,14 @@ from matplotlib.ticker import MultipleLocator,FormatStrFormatter
 
 lambda1 = 2*np.pi*0.83e9
 omega_d = 2*np.pi*6.82e9
-Ic0 = 2.6e-6 # unit A
+Ic0 = 4.76e-6 # unit A
 phi_0 = 2.068e-15 # unit wb
-C_p = 3e-12 # unit F
+C_p = 3.7e-12 # unit F
 R = 50 # unit Ohm
 # Z4 = 39 # unit Ohm
 Z2 = 57 # unit Ohm
 omega_aux = 2*np.pi*6.82e9
-phi = 0.0*phi_0
+phi = 0.2*phi_0
 Ic = Ic0*np.abs(np.cos(np.pi*phi/phi_0))
 print(Ic)
 L_p = phi_0/(2*np.pi*Ic)

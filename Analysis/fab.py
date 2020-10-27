@@ -2,9 +2,9 @@ import numpy as np
 
 
 # 设定电容
-C_p = 2.5e-12 #unit pF
+C_p = 3.7e-12 #unit pF
 # 常温junction电阻
-Rn=100 #unit ohm
+Rn=60 #unit ohm
 # Al的带隙
 delta=0.182e-3
 # 临界电流
